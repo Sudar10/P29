@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/photo">
+    </Button>
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPhoto"
+        android:onClick="onClickVideo"
+        android:text="@string/video">
+    </Button>
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVideo"
+        android:contentDescription="@string/todo">
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="494dp"
+        android:layout_weight="1"
+        android:text="Web"
+        tools:ignore="DuplicateClickableBoundsCheck"></Button>
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="552dp"
+        android:layout_weight="1"
+        android:text="Map"></Button>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="433dp"
+        android:layout_weight="1"
+        android:text="Call"></Button>
+
+</RelativeLayout>
